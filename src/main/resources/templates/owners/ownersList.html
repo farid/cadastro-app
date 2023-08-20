@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
+
+  <body>
+
+    <h2>Cadastro</h2>
+
+    <table id="owners" class="table table-striped">
+        <thead>
+        <tr>
+            <th style="width: 150px;">Nome</th>
+            <th>CPF</th>
+            <th style="width: 200px;">CEP</th>
+            <th style="width: 200px;">Endereço</th>
+            <th style="width: 120px">Telefone</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+          <tr th:each="cadastro : ${selections}">
+              <td>
+                  <a th:href="@{/owners/__${cadastro.id}__}" th:text="${cadastro.nome}"/></a>
+              </td>
+              <td th:text="${cadastro.CPF}"/>
+              <td th:text="${cadastro.CEP}"/>
+              <td th:text="${cadastro.endereco}"/>
+              <td th:text="${cadastro.telefone}"/>
+              <!--td><span th:each="pet : ${owner.pets}" th:text="${pet.name} "/></td -->
+          </tr>
+        </tbody>
+    </table>
+
+  </body>
+</html>
