@@ -24,13 +24,11 @@ import org.springframework.samples.portal_atendimento.vet.VetRepository;
 //@SpringBootTest
 class PortalAtendimentoIntegrationTests {
 
-	// @Autowired
-	private VetRepository vets;
-
-	// @Test
-	void testFindAll() throws Exception {
-		vets.findAll();
-		vets.findAll(); // served from cache
-	}
+	/*
+	 * @Autowired private VetRepository vets;
+	 *
+	 * @Test void testFindAll() throws Exception { vets.findAll(); vets.findAll(); //
+	 * served from cache }
+	 */
 
 }

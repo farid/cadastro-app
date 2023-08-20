@@ -34,27 +34,23 @@ import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
  */
 class ValidatorTests {
 
-	private Validator createValidator() {
-		LocalValidatorFactoryBean localValidatorFactoryBean = new LocalValidatorFactoryBean();
-		localValidatorFactoryBean.afterPropertiesSet();
-		return localValidatorFactoryBean;
-	}
-
-	// @Test
-	void shouldNotValidateWhenFirstNameEmpty() {
-
-		LocaleContextHolder.setLocale(Locale.ENGLISH);
-		Person person = new Person();
-		person.setNome("");
-		person.setNome("smith");
-
-		Validator validator = createValidator();
-		Set<ConstraintViolation<Person>> constraintViolations = validator.validate(person);
-
-		assertThat(constraintViolations).hasSize(1);
-		ConstraintViolation<Person> violation = constraintViolations.iterator().next();
-		assertThat(violation.getPropertyPath().toString()).isEqualTo("firstName");
-		assertThat(violation.getMessage()).isEqualTo("must not be empty");
-	}
+	/*
+	 * private Validator createValidator() { LocalValidatorFactoryBean
+	 * localValidatorFactoryBean = new LocalValidatorFactoryBean();
+	 * localValidatorFactoryBean.afterPropertiesSet(); return localValidatorFactoryBean; }
+	 *
+	 * // @Test void shouldNotValidateWhenFirstNameEmpty() {
+	 *
+	 * LocaleContextHolder.setLocale(Locale.ENGLISH); Person person = new Person();
+	 * person.setNome(""); person.setNome("smith");
+	 *
+	 * Validator validator = createValidator(); Set<ConstraintViolation<Person>>
+	 * constraintViolations = validator.validate(person);
+	 *
+	 * assertThat(constraintViolations).hasSize(1); ConstraintViolation<Person> violation
+	 * = constraintViolations.iterator().next();
+	 * assertThat(violation.getPropertyPath().toString()).isEqualTo("firstName");
+	 * assertThat(violation.getMessage()).isEqualTo("must not be empty"); }
+	 */
 
 }
