@@ -27,13 +27,14 @@ CREATE TABLE IF NOT EXISTS types (
 
 CREATE TABLE IF NOT EXISTS owners (
   id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  first_name VARCHAR(30),
-  last_name VARCHAR(30),
-  address VARCHAR(255),
-  city VARCHAR(80),
-  telephone VARCHAR(20),
-  INDEX(last_name)
+  nome VARCHAR(100),
+  cpf VARCHAR(20),
+  endereco VARCHAR(255),
+  cep VARCHAR(15),
+  telefone VARCHAR(20),
+  INDEX(nome)
 ) engine=InnoDB;
+
 
 CREATE TABLE IF NOT EXISTS pets (
   id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
