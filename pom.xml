@@ -6,7 +6,7 @@
   <groupId>com.cidadao</groupId>
   <artifactId>cadastro-app</artifactId>
   <version>2.2.0.BUILD-SNAPSHOT</version>
-
+<!-- test de push -->
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
