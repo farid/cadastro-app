@@ -133,7 +133,7 @@
       <optional>true</optional>
     </dependency>
 
-<!-- Dependecia rhsso -->
+<!-- Dependecia rhsso :: -->
 <!-- 
     <dependency>
         <groupId>org.springframework.boot</groupId>
