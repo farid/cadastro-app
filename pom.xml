@@ -133,7 +133,7 @@
       <optional>true</optional>
     </dependency>
 
-<!-- Dependecia rhsso :: -->
+<!-- Dependecia rhsso :: 
 
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -149,7 +149,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
     </dependency>
-
+       -->
   </dependencies>
 
   <build>
