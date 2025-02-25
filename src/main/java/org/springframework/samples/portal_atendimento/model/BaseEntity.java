@@ -12,7 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- 
+
  */
 package org.springframework.samples.portal_atendimento.model;
 
@@ -39,7 +39,7 @@ public class BaseEntity implements Serializable {
 
 	public Integer getId() {
 		return id;
-	} 
+	}
 
 	public void setId(Integer id) {
 		this.id = id;
