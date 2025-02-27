@@ -32,7 +32,7 @@
     <spring-format.version>0.0.19</spring-format.version>
   </properties>
 
-  <dependencies>
+  <dependencies> 
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
